@@ -29,3 +29,11 @@ menuItems.forEach(item => {
     li.textContent = item;
     listContainer.appendChild(li);
 });
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach((question) => {
+  question.addEventListener("click", () => {
+    const answer = question.nextElementSibling;
+    answer.classList.toggle("show");
+  });
+});
