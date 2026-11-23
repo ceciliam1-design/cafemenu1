@@ -27,4 +27,9 @@ h1 {
   border: 2px solid #a5d6a7; 
   font-weight: bold;
 }
-
+  .faq-answer {
+  display: none;
+}
+.faq-answer.show {
+  display: block;
+}
